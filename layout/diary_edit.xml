@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:padding="2px"
+            android:id="@+id/textView"
+            android:textSize="20dp"
+            android:textColor="#fff32d"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="#fff32d" />
+    </RelativeLayout>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Body"
+        android:id="@+id/textView2"
+        android:layout_marginTop="33dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:textColor="#fff32d"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_height="270dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/body"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:backgroundTint="#fff32d" />
+
+    <ImageButton android:layout_height="65dp"
+        android:layout_width="65dp"
+        android:id="@+id/confirm"
+        android:background="@drawable/tick"
+        android:layout_marginStart="50dp"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_height="55dp"
+        android:layout_width="65dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/xz"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_height="55dp"
+        android:layout_width="65dp"
+        android:id="@+id/videoButton"
+        android:background="@drawable/video"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/confirm"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_marginLeft="40dp" />
+
+</RelativeLayout>
